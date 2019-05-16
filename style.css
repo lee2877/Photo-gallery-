@@ -1,10 +1,16 @@
 body{
     font-family: sans-serif;
+    background-image: url(backgroundImagesample.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+    
 }
 h1{
     text-align: center;
     color: black;
-    background-color:#f1f1f1;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    backface-visibility: visible;
     
 }
 .gallery{
@@ -28,25 +34,27 @@ ul {
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: #f1f1f1;
+  backface-visibility: visible;
   position: fixed;
   height: 100%;
   overflow: auto;
+  font-size: 20px;
 }
 
 li a {
   display: block;
   color: #000;
   padding: 8px 16px;
+  font-family: 'Pacifico', cursive;
   text-decoration: none;
 }
 
 li a.active {
-  background-color: #4CAF50;
+  background-color: rgb(50, 228, 204);
   color: white;
 }
 
 li a:hover:not(.active) {
-  background-color: #555;
+  background-color: rgb(126, 233, 105);
   color: white;
 }
