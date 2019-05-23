@@ -7,8 +7,10 @@
     </title>
     <link rel="stylesheet" href=style.css>
     <link rel="stylesheet" href=editorCss.css>
-
+    <script type="text/javascript" src="jsForEdit.js"></script>
+    
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,39 @@
         <li><a href="PhotoEdit.html">Photo Edit</a></li>
         <li><a href="Export.html">Export</a></li>
     </ul>
+
+    <div class="editor">
+        <div class="tools">
+            <button id="save">Save</button>
+            <button id="reset">Reset</button>
+            <input type="file" id="load" />
+            <p>
+                <label for="brightness">Brightness</label>
+                <input id="brightness" name="brightness" type="range" min=-100 max=100 value=0>
+            </p>
+            <p>
+                <label for="vibrance">Vibrance</label>
+                <input id="vibrance" name="vibrance" type="range" min=-100 max=100 value=0>
+            </p>
+                
+            <p>
+                <label for="hue">Hue</label>
+                <input id="hue" name="hue" type="range" min=-100 max=100 value=0>
+            </p>
+                
+            <p>
+                <label for="gamma">Gamma</label>
+                <input id="gamma" name="gamma" type="range" min=0  max=10 value=0>
+
+            </p>
+            <button id="vintage" class="filter">Vintage</button>
+            <button id="lomo" class="filter">Lomo</button>
+            <button id="clarity" class="filter">Clarity</button>
+            <button id="orangePeel" class="filter">Orange Peel</button>
+
+        </div>
+        <img id="image" class="img" src="image2.jpeg">
+    </div>
 
     
 
