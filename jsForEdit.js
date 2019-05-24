@@ -9,20 +9,35 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function changeSliderHandler(event){
         Caman("#image", function readerCaman() {
-            this.revert(false);
             this[event.target.name](event.target.value).render();
         });
     };
-    var brightnessRange = document.getElementById("brightness");
-    brightnessRange.onchange = changeSliderHandler;
+    var ranges = document.querySelectorAll('input[type="range"]');
+    ranges.forEach(function(range){
+        range.onchange = changeSliderHandler;
+    });
 
-    var vibranceRange = document.getElementById("vibrance");
-    vibranceRange.onchange = changeSliderHander;
+    var resetButton = document.getElementById("reset");
+    function resetButtonHandler(event){
+        ranges.forEach(function(range){
+            range.value =0;
+        });
+        Caman("#image",function() {
+            this.revert(true);
+        });
+    };
+    resetButton.onclick = resetButtonHandler;
 
-    var hueRange = docunemt.getElementById("hue");
-    hueRange.onchange = changeSliderHandler;
+    function filterButtonHandler(event) {
+        Caman('#image', function(){
+            this.revert(false);
+            this[event.target.id]().render();
 
-    var gammaRange = document.getElementById("gamma");
-    gammaRange.onchange = changeSliderHandler;
-    
+        });
+    };
+
+    var filterButtons = document.querySelectorAll('.filter');
+    filterButtons.forEach(function(filterButton){
+        filterButton.onclick = filterButtonHandler;
+    });
 }, false);
