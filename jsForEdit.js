@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function(){
         var imageFile = event.target.files[0];
         var imageElement = document.getElementById('image');
         imageElement.setAttribute('src', URL.createObjectURL(imageFile));
+        Caman("#image", function(){
+            this.revert(true);
+        });
+
     };
     loadImage.onchange = loadInputHandler;
 
@@ -40,4 +44,19 @@ document.addEventListener('DOMContentLoaded', function(){
     filterButtons.forEach(function(filterButton){
         filterButton.onclick = filterButtonHandler;
     });
+
+    var saveButton = document.getElementById('save');
+    function saveButtonHandler(event) {
+        Caman('#image', function(){
+            this.render();
+                this.save('image.png');
+        });
+    };
+    saveButton.onclick = saveButtonHandler;
+
+
+
+
+
+
 }, false);
