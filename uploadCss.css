@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+    background-image: url(backgroundImagesample.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+    
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    backface-visibility: visible;
+    
+}
+.upload{
+    border-left: 50px;
+    margin-top:50px;
+    margin-left:100px;
+    position: absolute;
+
+}
