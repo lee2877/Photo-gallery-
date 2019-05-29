@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function changeSliderHandler(event){
         Caman("#image", function readerCaman() {
+            this.revert(true);
             this[event.target.name](event.target.value).render();
         });
     };
     var ranges = document.querySelectorAll('input[type="range"]');
     ranges.forEach(function(range){
+        
         range.onchange = changeSliderHandler;
     });
 
@@ -45,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function(){
         filterButton.onclick = filterButtonHandler;
     });
 
-    var saveButton = document.getElementById('save');
+    var saveButton = document.getElementById("save");
     function saveButtonHandler(event) {
         Caman("#image", function(){
             this.render(function(){
-                this.save("image.png");
+                this.save("/Document/imagesample.png");
             });
         });
     };
