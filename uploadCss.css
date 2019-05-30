@@ -14,9 +14,42 @@ h1{
     
 }
 .upload{
-    border-left: 50px;
-    margin-top:50px;
-    margin-left:100px;
+    border-left: 100px;
+    margin-left: 230px;
     position: absolute;
 
+}
+.yourimage{
+    margin-left: 230px;
+    margin-top : 70px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  backface-visibility: visible;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-size: 20px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: rgb(50, 228, 204);
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(126, 233, 105);
+  color: white;
 }
