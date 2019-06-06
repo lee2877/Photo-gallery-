@@ -1,0 +1,32 @@
+body{
+    background-color:black;
+}
+.testing{
+    text-decoration-color: green;
+    text-align:center;
+    
+    padding-top: 200px;
+}
+.test1{
+    
+    
+    color: white;
+    font-size: 20px;
+    margin : 0px;
+}
+.test2{
+    
+    color:yellow;
+    font-size: 10px;
+    margin: 0px;
+}
+.test3{
+    color:green;
+    font-size: 30px;
+    margin:0px;
+}
+.mainPhoto{
+    color: Blue;
+    font-size: 50px;
+    margin: 0px;
+}
