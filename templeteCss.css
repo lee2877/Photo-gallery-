@@ -8,25 +8,62 @@ body{
     padding-top: 200px;
 }
 .test1{
-    
-    
+    position: relative;
+    font-family: 'Ranga', cursive;
     color: white;
     font-size: 20px;
     margin : 0px;
 }
+.test1img{
+    display:none;
+}
+.test1txt:hover ~ .test1img{
+    position:absolute;
+    align-content: right;
+    display:block;
+}
 .test2{
-    
+    position: relative;
+    font-family: 'Indie Flower', cursive;
     color:yellow;
     font-size: 10px;
     margin: 0px;
 }
+.test2img{
+    display:none;
+}
+.test2txt:hover ~ .test2img{
+    position:absolute;
+    align-content: right;
+    display:block;
+}
 .test3{
+    position: relative;
+    font-family: 'Shadows Into Light', cursive;
     color:green;
     font-size: 30px;
     margin:0px;
 }
+.test3img{
+    display:none;
+}
+.test3txt:hover ~ .test3img{
+    position:absolute;
+    align-content: right;
+    display:block;
+}
 .mainPhoto{
+    position: relative;
     color: Blue;
     font-size: 50px;
     margin: 0px;
+}
+.mainimg{
+    display: none;
+}
+.maintxt:hover ~ .mainimg{
+    position: absolute;
+    align-content: right;
+    display: block;
+    
 }
