@@ -10,12 +10,16 @@ body{
 .test1{
     position: relative;
     font-family: 'Ranga', cursive;
-    color: white;
+    color: red;
     font-size: 20px;
     margin : 0px;
 }
 .test1img{
     display:none;
+}
+.test1txt:hover{
+    filter:grayscale(100%);
+    transform: scale(0.9);
 }
 .test1txt:hover ~ .test1img{
     position:absolute;
@@ -32,6 +36,10 @@ body{
 .test2img{
     display:none;
 }
+.test2txt:hover{
+    filter:grayscale(100%);
+    transform: scale(0.9);
+}
 .test2txt:hover ~ .test2img{
     position:absolute;
     align-content: right;
@@ -47,6 +55,10 @@ body{
 .test3img{
     display:none;
 }
+.test3txt:hover{
+    filter: grayscale(100%);
+    transform: scale(0.9);
+}
 .test3txt:hover ~ .test3img{
     position:absolute;
     align-content: right;
@@ -60,6 +72,10 @@ body{
 }
 .mainimg{
     display: none;
+}
+.maintxt:hover{
+    filter:grayscale(100%);
+    transform: scale(0.9);
 }
 .maintxt:hover ~ .mainimg{
     position: absolute;
